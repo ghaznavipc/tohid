@@ -77,7 +77,7 @@ hgroup {
 .picture {
     grid-column: 1/-1;
     grid-row: 1/-1;
-    background-image: linear-gradient(rgba(0,0,0,0) 30%, rgba(0,0,0,.5), rgba(0,0,0,0.5)  80%),url("/img/1.webp");
+    background-image: linear-gradient(rgba(0,0,0,0) 30%, rgba(0,0,0,.5), rgba(0,0,0,0.5)  80%),url("../img/1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ hgroup {
     
     @media screen and (min-width: 600px) {
         grid-column: 3/4;
-        background-image: url("/img/1.webp");
+        background-image: url("../img/1.webp");
 
     }
 }
