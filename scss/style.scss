@@ -1,0 +1,91 @@
+@import url('https://v1.fontapi.ir/css/Shabnam');
+
+* {
+    margin: 0;
+}
+
+:root {
+    direction: rtl;
+}
+
+body {
+    font-family: 'Shabnam', IRYekan, b yekan, yekan, arial;
+    background-color: #333;
+    color: #fff;
+    font-size: 70%;
+
+    @media screen and (min-width: 900px) {
+        font-size: 100%;
+    }
+    @media screen and (min-width: 2500px) {
+        font-size: 150%;
+    }
+}
+
+a {
+    color: #def;
+    text-decoration: none;
+    transition: color .3s ease;
+
+    &:hover {
+        color: #acf;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 6fr minmax(180px, 3fr);
+    grid-template-rows: 100vh;
+    
+}
+
+.main {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    align-self: center;
+    justify-self: center;
+
+    @media screen and (min-width: 600px) {
+        grid-column: 2/3;
+        text-shadow: 0 0 5px #333;
+    }
+}
+
+hgroup {
+    padding: 1em;
+    margin-bottom: 2em;
+
+    h1 {
+        font-size: 3.6em;
+        color: #bdf;
+    }
+    p {
+        font-size: 1.125em;
+    }
+}
+
+.contact {
+    direction: ltr;
+    font-size: 1.3em;
+
+    a {
+        display: inline-block;
+        padding: .5em;
+    }
+}
+
+.picture {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background-image: linear-gradient(rgba(0,0,0,0) 30%, rgba(0,0,0,.5), rgba(0,0,0,0.5)  80%),url("/img/1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+    @media screen and (min-width: 600px) {
+        grid-column: 3/4;
+        background-image: url("/img/1.webp");
+
+    }
+}
